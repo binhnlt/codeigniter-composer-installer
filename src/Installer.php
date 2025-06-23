@@ -28,6 +28,7 @@ class Installer
         mkdir(static::DOCROOT, 0755);
         copy('vendor/codeigniter/framework/index.php', static::DOCROOT . '/index.php');
         copy('dot.htaccess', static::DOCROOT . '/.htaccess');
+        copy('vendor/codeigniter/framework/.gitignore', '.gitignore');
 
         // Fix paths in index.php
         $file = static::DOCROOT . '/index.php';
@@ -96,7 +97,7 @@ class Installer
         );
         $io->write('$ cd <codeigniter_project_folder>');
         $io->write('$ php bin/install.php');
-        $io->write('<info>Above command will show help message.</info>');
+        $io->write('<info>The above command will show help message.</info>');
         $io->write('See <https://github.com/kenjis/codeigniter-composer-installer> for details');
         $io->write('==================================================');
     }

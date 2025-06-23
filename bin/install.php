@@ -28,7 +28,7 @@ class Installer
                 'repos' => 'codeigniter3-translations',
                 'name'  => 'Translations for CodeIgniter System Messages',
                 'dir'   => 'language',
-                'example_branch' => '3.0.0',
+                'example_branch' => '3.1.0',
              ),
             'restserver' => array(
                 'site'  => 'github',
@@ -86,6 +86,15 @@ class Installer
                 'name'  => 'CodeIgniter3 Filename Checker',
                 'dir'   => 'controllers',
                 'msg'   => 'See https://github.com/kenjis/codeigniter3-filename-checker',
+                'example_branch' => 'master',
+            ),
+            'codeigniter-develbar' => array(
+                'site'  => 'github',
+                'user'  => 'jcsama',
+                'repos' => 'CodeIgniter-develbar',
+                'name'  => 'CodeIgniter Developer Toolbar',
+                'dir'   => array('config','core', 'third_party','controllers'),
+                'msg'   => 'See https://github.com/JCSama/CodeIgniter-develbar',
                 'example_branch' => 'master',
             ),
         );
